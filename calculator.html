@@ -10,7 +10,8 @@
  
 <table class="calculator" >
   <tr>
-    <td colspan="4"> <input class="display-box" type="text" id="result" disabled placeholder="0"/> </td>
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled placeholder="0"/> </td>
+    <td colspan="1"> <input type="button" value="C" onclick="backspace()" /> </td>
   </tr>
 
   <tr>
@@ -38,8 +39,9 @@
     <td> <input type="button" value="+" onclick="display('+')" /> </td>
   </tr>
   <tr>
-    <td colspan="2"> <input type="button" value="0" onclick="display('0')" /> </td>
-    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" id="0" value="0" onclick="display('0')" /> </td>
+    <td> <input type="button" id="00" value="00" onclick="display('00')" /> </td>
+    <td> <input type="button" id="." value="." onclick="display('.')" /> </td>
     <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
   </tr>
 </table>
